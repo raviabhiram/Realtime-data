@@ -1,0 +1,24 @@
+{
+  "last_updated": 1500050145,
+  "ttl": 10,
+  "data": {
+    "en": {
+      "feeds": [{
+        "name": "station_information",
+        "url": "https://gbfs.capitalbikeshare.com/gbfs/en/station_information.json"
+      }, {
+        "name": "system_regions",
+        "url": "https://gbfs.capitalbikeshare.com/gbfs/en/system_regions.json"
+      }, {
+        "name": "system_information",
+        "url": "https://gbfs.capitalbikeshare.com/gbfs/en/system_information.json"
+      }, {
+        "name": "station_status",
+        "url": "https://gbfs.capitalbikeshare.com/gbfs/en/station_status.json"
+      }, {
+        "name": "system_calendar",
+        "url": "https://gbfs.capitalbikeshare.com/gbfs/en/system_calendar.json"
+      }]
+    }
+  }
+}

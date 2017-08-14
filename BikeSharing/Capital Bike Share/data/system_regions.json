@@ -1,0 +1,28 @@
+{
+  "last_updated": 1500050270,
+  "ttl": 10,
+  "data": {
+    "regions": [{
+      "region_id": "40",
+      "name": "Reporting-Alexandria, VA"
+    }, {
+      "region_id": "41",
+      "name": "Reporting-Arlington, VA"
+    }, {
+      "region_id": "42",
+      "name": "Reporting-Washington, DC"
+    }, {
+      "region_id": "43",
+      "name": "Reporting-Montgomery County, MD-JARC"
+    }, {
+      "region_id": "44",
+      "name": "Reporting-Montgomery County, MD-Not JARC"
+    }, {
+      "region_id": "48",
+      "name": "Reporting-Test & Operations"
+    }, {
+      "region_id": "104",
+      "name": "Reporting-Fairfax, VA"
+    }]
+  }
+}

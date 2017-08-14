@@ -1,0 +1,25 @@
+{
+  "last_updated": 1500050640,
+  "ttl": 10,
+  "data": {
+    "regions": [{
+      "region_id": "4",
+      "name": "Brookline"
+    }, {
+      "region_id": "8",
+      "name": "Cambridge"
+    }, {
+      "region_id": "9",
+      "name": "Somerville"
+    }, {
+      "region_id": "10",
+      "name": "Boston"
+    }, {
+      "region_id": "33",
+      "name": "Motivate"
+    }, {
+      "region_id": "39",
+      "name": "8D"
+    }]
+  }
+}

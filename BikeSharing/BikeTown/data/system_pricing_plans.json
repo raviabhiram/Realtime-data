@@ -1,0 +1,31 @@
+{
+  "last_updated": 1500050055,
+  "ttl": 60,
+  "data": {
+    "plans": [{
+      "plan_id": "payment_plan_332",
+      "name": "Single Ride",
+      "url": "https://widget.socialbicycles.com/92/332",
+      "currency": "USD",
+      "price": 0.0,
+      "taxable": 1,
+      "description": "Includes one bike for one trip up to 30 minutes. $20 fee for ending trip out of system area applies."
+    }, {
+      "plan_id": "payment_plan_321",
+      "name": "Day Pass",
+      "url": "https://widget.socialbicycles.com/92/321",
+      "currency": "USD",
+      "price": 12.0,
+      "taxable": 1,
+      "description": "24-hour access starting on same day of purchase. Additional bikes billed at $0.10/min. Free time applies to first bike only. $20 fee for ending trip out of system area applies."
+    }, {
+      "plan_id": "payment_plan_333",
+      "name": "Annual Member",
+      "url": "https://widget.socialbicycles.com/92/333",
+      "currency": "USD",
+      "price": 144.0,
+      "taxable": 1,
+      "description": "$12 / month with an annual commitment. Additional bikes billed at $0.10/min. Free time applies to first bike only. $20 fee for ending trip out of system area applies."
+    }]
+  }
+}

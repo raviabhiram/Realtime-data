@@ -1,0 +1,14 @@
+{
+  "last_updated": 1500049851,
+  "ttl": 60,
+  "data": {
+    "system_id": "biketownpdx",
+    "language": "en",
+    "name": "BIKETOWNpdx",
+    "url": "http://biketownpdx.com/",
+    "purchase_url": "http://biketownpdx.com/",
+    "timezone": "America/Los_Angeles",
+    "phone_number": "(866) 512-2453",
+    "email": "customerservice@biketownpdx.com"
+  }
+}

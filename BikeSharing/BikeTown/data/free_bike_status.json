@@ -1,0 +1,336 @@
+{
+  "last_updated": 1500049933,
+  "ttl": 60,
+  "data": {
+    "bikes": [{
+      "bike_id": "bike_6492",
+      "name": "0625 BIKETOWN",
+      "lon": -122.65261333333333,
+      "lat": 45.51697,
+      "is_reserved": 0,
+      "is_disabled": 0
+    }, {
+      "bike_id": "bike_6276",
+      "name": "0451 BIKETOWN",
+      "lon": -122.67656666666667,
+      "lat": 45.51298,
+      "is_reserved": 0,
+      "is_disabled": 0
+    }, {
+      "bike_id": "bike_6278",
+      "name": "0609 BIKETOWN",
+      "lon": -122.675865,
+      "lat": 45.511675,
+      "is_reserved": 0,
+      "is_disabled": 0
+    }, {
+      "bike_id": "bike_7309",
+      "name": "0995 BETRUE TRAINER",
+      "lon": -122.691835,
+      "lat": 45.516511666666666,
+      "is_reserved": 0,
+      "is_disabled": 0
+    }, {
+      "bike_id": "bike_6187",
+      "name": "0047 BIKETOWN",
+      "lon": -122.685715,
+      "lat": 45.55837,
+      "is_reserved": 0,
+      "is_disabled": 0
+    }, {
+      "bike_id": "bike_6189",
+      "name": "0139 BIKETOWN",
+      "lon": -122.66271666666667,
+      "lat": 45.510918333333336,
+      "is_reserved": 0,
+      "is_disabled": 0
+    }, {
+      "bike_id": "bike_7164",
+      "name": "0161 BIKETOWN",
+      "lon": -122.67791333333334,
+      "lat": 45.51041166666667,
+      "is_reserved": 0,
+      "is_disabled": 0
+    }, {
+      "bike_id": "bike_7341",
+      "name": "1021 AIR SAFARI",
+      "lon": -122.67392166666667,
+      "lat": 45.513391666666664,
+      "is_reserved": 0,
+      "is_disabled": 0
+    }, {
+      "bike_id": "bike_7382",
+      "name": "0933 AIR MAX",
+      "lon": -122.67760666666666,
+      "lat": 45.52357166666667,
+      "is_reserved": 0,
+      "is_disabled": 0
+    }, {
+      "bike_id": "bike_6841",
+      "name": "0075 BIKETOWN",
+      "lon": -122.65368,
+      "lat": 45.519146666666664,
+      "is_reserved": 0,
+      "is_disabled": 0
+    }, {
+      "bike_id": "bike_7491",
+      "name": "0464 BIKETOWN",
+      "lon": -122.68435833333334,
+      "lat": 45.53004833333333,
+      "is_reserved": 0,
+      "is_disabled": 0
+    }, {
+      "bike_id": "bike_6531",
+      "name": "0385 BIKETOWN",
+      "lon": -122.64999666666667,
+      "lat": 45.53422666666667,
+      "is_reserved": 0,
+      "is_disabled": 0
+    }, {
+      "bike_id": "bike_6443",
+      "name": "0462 BIKETOWN",
+      "lon": -122.69967,
+      "lat": 45.53291333333333,
+      "is_reserved": 0,
+      "is_disabled": 0
+    }, {
+      "bike_id": "bike_7377",
+      "name": "0960 BETRUE MAX",
+      "lon": -122.68966166666667,
+      "lat": 45.5365,
+      "is_reserved": 0,
+      "is_disabled": 0
+    }, {
+      "bike_id": "bike_7266",
+      "name": "0775 BIKETOWN",
+      "lon": -122.68052666666667,
+      "lat": 45.522713333333336,
+      "is_reserved": 0,
+      "is_disabled": 0
+    }, {
+      "bike_id": "bike_7323",
+      "name": "0965 BETRUE TRAINER",
+      "lon": -122.67915166666667,
+      "lat": 45.51846833333333,
+      "is_reserved": 0,
+      "is_disabled": 0
+    }, {
+      "bike_id": "bike_6615",
+      "name": "0838 BIKETOWN",
+      "lon": -122.68504,
+      "lat": 45.52499,
+      "is_reserved": 0,
+      "is_disabled": 0
+    }, {
+      "bike_id": "bike_6595",
+      "name": "0822 BIKETOWN",
+      "lon": -122.663185,
+      "lat": 45.507616666666664,
+      "is_reserved": 0,
+      "is_disabled": 0
+    }, {
+      "bike_id": "bike_6305",
+      "name": "0111 BIKETOWN",
+      "lon": -122.69032666666666,
+      "lat": 45.513365,
+      "is_reserved": 0,
+      "is_disabled": 0
+    }, {
+      "bike_id": "bike_6233",
+      "name": "0635 BIKETOWN",
+      "lon": -122.68584666666666,
+      "lat": 45.511965000000004,
+      "is_reserved": 0,
+      "is_disabled": 0
+    }, {
+      "bike_id": "bike_7206",
+      "name": "0553 BIKETOWN",
+      "lon": -122.68148833333333,
+      "lat": 45.51751333333333,
+      "is_reserved": 0,
+      "is_disabled": 0
+    }, {
+      "bike_id": "bike_6267",
+      "name": "0555 BIKETOWN",
+      "lon": -122.68147166666667,
+      "lat": 45.51987833333333,
+      "is_reserved": 0,
+      "is_disabled": 0
+    }, {
+      "bike_id": "bike_7369",
+      "name": "0950 BETRUE MAX",
+      "lon": -122.649465,
+      "lat": 45.49396333333333,
+      "is_reserved": 0,
+      "is_disabled": 0
+    }, {
+      "bike_id": "bike_6500",
+      "name": "0136 BIKETOWN",
+      "lon": -122.69857833333333,
+      "lat": 45.528283333333334,
+      "is_reserved": 0,
+      "is_disabled": 0
+    }, {
+      "bike_id": "bike_7184",
+      "name": "0428 BIKETOWN",
+      "lon": -122.663855,
+      "lat": 45.51884166666667,
+      "is_reserved": 0,
+      "is_disabled": 0
+    }, {
+      "bike_id": "bike_6851",
+      "name": "0082 BIKETOWN",
+      "lon": -122.67301333333333,
+      "lat": 45.52455333333333,
+      "is_reserved": 0,
+      "is_disabled": 0
+    }, {
+      "bike_id": "bike_7145",
+      "name": "0572 BIKETOWN",
+      "lon": -122.66731,
+      "lat": 45.551851666666664,
+      "is_reserved": 0,
+      "is_disabled": 0
+    }, {
+      "bike_id": "bike_6177",
+      "name": "0367 BIKETOWN",
+      "lon": -122.66276833333333,
+      "lat": 45.524145,
+      "is_reserved": 0,
+      "is_disabled": 0
+    }, {
+      "bike_id": "bike_6585",
+      "name": "0681 BIKETOWN",
+      "lon": -122.679885,
+      "lat": 45.52079166666667,
+      "is_reserved": 0,
+      "is_disabled": 0
+    }, {
+      "bike_id": "bike_6046",
+      "name": "0452 BIKETOWN",
+      "lon": -122.65991833333334,
+      "lat": 45.54644166666667,
+      "is_reserved": 0,
+      "is_disabled": 0
+    }, {
+      "bike_id": "bike_7203",
+      "name": "0382 BIKETOWN",
+      "lon": -122.67528333333334,
+      "lat": 45.518505,
+      "is_reserved": 0,
+      "is_disabled": 0
+    }, {
+      "bike_id": "bike_7287",
+      "name": "0561 BIKETOWN",
+      "lon": -122.66916666666667,
+      "lat": 45.522421666666666,
+      "is_reserved": 0,
+      "is_disabled": 0
+    }, {
+      "bike_id": "bike_6515",
+      "name": "0114 BIKETOWN",
+      "lon": -122.690695,
+      "lat": 45.533205,
+      "is_reserved": 0,
+      "is_disabled": 0
+    }, {
+      "bike_id": "bike_7358",
+      "name": "1026 AIR SAFARI",
+      "lon": -122.659635,
+      "lat": 45.51291833333333,
+      "is_reserved": 0,
+      "is_disabled": 0
+    }, {
+      "bike_id": "bike_7353",
+      "name": "1019 AIR SAFARI",
+      "lon": -122.68243,
+      "lat": 45.51967833333333,
+      "is_reserved": 0,
+      "is_disabled": 0
+    }, {
+      "bike_id": "bike_6789",
+      "name": "0446 BIKETOWN",
+      "lon": -122.68063333333333,
+      "lat": 45.51513166666667,
+      "is_reserved": 0,
+      "is_disabled": 0
+    }, {
+      "bike_id": "bike_6067",
+      "name": "0298 BIKETOWN",
+      "lon": -122.598355,
+      "lat": 45.490165,
+      "is_reserved": 0,
+      "is_disabled": 0
+    }, {
+      "bike_id": "bike_7131",
+      "name": "0255 BIKETOWN",
+      "lon": -122.66423,
+      "lat": 45.53990833333334,
+      "is_reserved": 0,
+      "is_disabled": 0
+    }, {
+      "bike_id": "bike_6125",
+      "name": "0900 BIKETOWN",
+      "lon": -122.68420333333333,
+      "lat": 45.53434333333333,
+      "is_reserved": 0,
+      "is_disabled": 0
+    }, {
+      "bike_id": "bike_7311",
+      "name": "0991 BETRUE TRAINER",
+      "lon": -122.68540333333334,
+      "lat": 45.51251666666667,
+      "is_reserved": 0,
+      "is_disabled": 0
+    }, {
+      "bike_id": "bike_6814",
+      "name": "0435 BIKETOWN",
+      "lon": -122.67341,
+      "lat": 45.524035,
+      "is_reserved": 0,
+      "is_disabled": 0
+    }, {
+      "bike_id": "bike_6075",
+      "name": "0873 BIKETOWN",
+      "lon": -122.66049833333334,
+      "lat": 45.50939666666667,
+      "is_reserved": 0,
+      "is_disabled": 0
+    }, {
+      "bike_id": "bike_6194",
+      "name": "0645 BIKETOWN",
+      "lon": -122.69245166666667,
+      "lat": 45.53263833333333,
+      "is_reserved": 0,
+      "is_disabled": 0
+    }, {
+      "bike_id": "bike_7192",
+      "name": "0552 BIKETOWN",
+      "lon": -122.67923,
+      "lat": 45.51562833333333,
+      "is_reserved": 0,
+      "is_disabled": 0
+    }, {
+      "bike_id": "bike_6269",
+      "name": "0595 BIKETOWN",
+      "lon": -122.69069333333333,
+      "lat": 45.51388166666667,
+      "is_reserved": 0,
+      "is_disabled": 0
+    }, {
+      "bike_id": "bike_7320",
+      "name": "0990 BETRUE TRAINER",
+      "lon": -122.69081333333334,
+      "lat": 45.51400833333334,
+      "is_reserved": 0,
+      "is_disabled": 0
+    }, {
+      "bike_id": "bike_7256",
+      "name": "0463 BIKETOWN",
+      "lon": -122.67619,
+      "lat": 45.515163333333334,
+      "is_reserved": 0,
+      "is_disabled": 0
+    }]
+  }
+}

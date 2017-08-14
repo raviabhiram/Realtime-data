@@ -1,0 +1,18 @@
+{
+  "last_updated": 1500050365,
+  "ttl": 30,
+  "data": {
+    "en": {
+      "feeds": [{
+        "name": "system_information",
+        "url": "https://gbfs.divvybikes.com/gbfs/en/system_information.json"
+      }, {
+        "name": "station_information",
+        "url": "https://gbfs.divvybikes.com/gbfs/en/station_information.json"
+      }, {
+        "name": "station_status",
+        "url": "https://gbfs.divvybikes.com/gbfs/en/station_status.json"
+      }]
+    }
+  }
+}

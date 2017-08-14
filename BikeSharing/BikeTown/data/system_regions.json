@@ -1,0 +1,10 @@
+{
+  "last_updated": 1500050031,
+  "ttl": 60,
+  "data": {
+    "regions": [{
+      "region_id": "region_241",
+      "name": "BIKETOWN PDX"
+    }]
+  }
+}

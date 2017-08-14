@@ -1,0 +1,21 @@
+{
+  "last_updated": 1500050528,
+  "ttl": 10,
+  "data": {
+    "en": {
+      "feeds": [{
+        "name": "station_information",
+        "url": "https://gbfs.thehubway.com/gbfs/en/station_information.json"
+      }, {
+        "name": "station_status",
+        "url": "https://gbfs.thehubway.com/gbfs/en/station_status.json"
+      }, {
+        "name": "system_regions",
+        "url": "https://gbfs.thehubway.com/gbfs/en/system_regions.json"
+      }, {
+        "name": "system_information",
+        "url": "https://gbfs.thehubway.com/gbfs/en/system_information.json"
+      }]
+    }
+  }
+}

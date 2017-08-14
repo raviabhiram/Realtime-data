@@ -1,0 +1,14 @@
+{
+  "last_updated": 1500048967,
+  "ttl": 30,
+  "data": {
+    "system_id": "cogo",
+    "language": "en",
+    "name": "CoGo Bike Share",
+    "timezone": "America/New_York",
+    "build_version": "4.7.1",
+    "build_label": "2017-06-16",
+    "build_hash": "4a0bbc4",
+    "build_number": "166"
+  }
+}
