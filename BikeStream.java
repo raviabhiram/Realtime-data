@@ -7,69 +7,112 @@ import java.io.DataOutputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.Timer;
+import java.util.TimerTask;
+import java.util.Date;
 
 public class BikeStream {
+public static void main(String[] args) throws Exception {
+        try{
+                BikeStream init = new BikeStream();
+                init.run(args);
+        } catch(Exception e) {
+                e.printStackTrace();
+        }
+}
 
-   private final String USER_AGENT = "Mozilla/5.0";
-   
-   public static void main(String[] args) throws Exception{
-      if(args.length == 0){
-         System.out.println("Enter topic name");
-         return;
-      }
-      
-      BikeStream http = new BikeStream();
+public void run(String[] args) throws Exception {
+        try{
+                if(args.length == 0) {
+                        System.out.println("Enter topic name");
+                        return;
+                }
 
-      String topicName = args[0].toString();
-      String key = "station_information";
-      String data = http.sendGet();
-      Properties props = new Properties();
-      props.put("bootstrap.servers", "kafkaServer:9092");
-      props.put("acks", "all");
-      props.put("retries", 0);
-      props.put("batch.size", 16384);
-      props.put("linger.ms", 1);
-      props.put("buffer.memory", 33554432);
-      props.put("key.serializer", "org.apache.kafka.common.serialization.StringSerializer");
-      props.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
+                Timer time = new Timer();
+                StreamData sd = new StreamData(args[0].toString());
+                long delay = 0;
+                long interval = 10000;
+                time.schedule(sd,delay,interval);
+        } catch(Exception e) {
+                e.printStackTrace();
+        }
+}
 
-      Producer<String, String> producer = new KafkaProducer
-         <String, String>(props);
-            
-      producer.send(new ProducerRecord<String, String>(topicName, key, data));
-      System.out.println("Message sent successfully");
-      producer.close();
-   }
+public class StreamData extends TimerTask {
 
-   private String sendGet() throws Exception {
+String topicName;
 
-      String url = "https://gbfs.citibikenyc.com/gbfs/en/station_information.json";
+public StreamData(){
+        topicName="default";
+}
 
-      URL obj = new URL(url);
-      HttpURLConnection con = (HttpURLConnection) obj.openConnection();
+public StreamData(String topic){
+        topicName=topic;
+}
 
-      // optional default is GET
-      con.setRequestMethod("GET");
+private final String USER_AGENT = "Mozilla/5.0";
 
-      //add request header
-      con.setRequestProperty("User-Agent", USER_AGENT);
 
-      int responseCode = con.getResponseCode();
-      System.out.println("\nSending 'GET' request to URL : " + url);
-      System.out.println("Response Code : " + responseCode);
+public void run(){
+        try{
+                System.out.println("Streaming data to kafka topic "+topicName);
+                StreamData http = new StreamData();
 
-      BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
-      String inputLine;
-      StringBuffer response = new StringBuffer();
+                String key = "station_information";
+                String data = http.sendGet();
+                Properties props = new Properties();
+                props.put("bootstrap.servers", "kafkaServer:9092");
+                props.put("acks", "all");
+                props.put("retries", 0);
+                props.put("batch.size", 16384);
+                props.put("linger.ms", 1);
+                props.put("buffer.memory", 33554432);
+                props.put("key.serializer", "org.apache.kafka.common.serialization.StringSerializer");
+                props.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
 
-      while ((inputLine = in.readLine()) != null) {
-         response.append(inputLine);
-      }
-      in.close();
+                Producer<String, String> producer = new KafkaProducer
+                                                    <String, String>(props);
 
-      //print result
-      // System.out.println(response.toString());
-      return response.toString();
+                producer.send(new ProducerRecord<String, String>(topicName, key, data));
+                System.out.println("Message sent successfully");
+                producer.close();
+        }catch(Exception e) {
+                e.printStackTrace();
+        }
+}
 
-   }
+private String sendGet() throws Exception {
+
+        try{
+                String url = "https://gbfs.citibikenyc.com/gbfs/en/station_information.json";
+
+                URL obj = new URL(url);
+                HttpURLConnection con = (HttpURLConnection) obj.openConnection();
+
+                // optional default is GET
+                con.setRequestMethod("GET");
+
+                //add request header
+                con.setRequestProperty("User-Agent", USER_AGENT);
+
+                int responseCode = con.getResponseCode();
+                System.out.println("\nSending 'GET' request to URL : " + url);
+                System.out.println("Response Code : " + responseCode);
+
+                BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
+                String inputLine;
+                StringBuffer response = new StringBuffer();
+
+                while ((inputLine = in.readLine()) != null) {
+                        response.append(inputLine);
+                }
+                in.close();
+
+                return response.toString();
+        }catch(Exception e) {
+                e.printStackTrace();
+                return "Error!";
+        }
+}
+}
 }
