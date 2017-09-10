@@ -1,0 +1,6 @@
+{
+  "API": "https://gbfs.citibikenyc.com/gbfs/en/station_status.json",
+  "topic": "citibikedata",
+  "interval": 10000,
+  "writePath":"/bikeData/citiBikeData.json"
+}

@@ -1,0 +1,6 @@
+{
+  "API": "https://gbfs.divvybikes.com/gbfs/en/station_status.json",
+  "topic": "divvybikedata",
+  "interval": 30000,
+  "writePath":"/bikeData/divvyBikeData.json"
+}
