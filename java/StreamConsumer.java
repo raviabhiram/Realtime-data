@@ -56,7 +56,7 @@ public static void main(String[] args) throws Exception {
                         System.out.printf("Read data from server.\n");
                         //Write the read results to the file.
                         try{
-                                out.println(",%s",record.value());
+                                out.println(","+record.value());
                         }
                         catch(Exception e) {
                                 System.out.println("Error writing to file!");
