@@ -1,0 +1,8 @@
+sharding:
+  clusterRole: shardsvr
+replication:
+  replSetName: realTimeData
+storage:
+  dbPath: /data/db
+net:
+  port: 27017

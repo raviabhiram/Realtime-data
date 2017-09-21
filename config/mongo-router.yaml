@@ -1,0 +1,4 @@
+sharding:
+  configDB: realTimeData/configsvr
+net:
+  port: 27017
