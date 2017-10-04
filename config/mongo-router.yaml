@@ -1,4 +1,4 @@
 sharding:
-  configDB: realTimeData/configsvr
+  configDB: realTimeDataConfig/configsvrone:20002
 net:
-  port: 27017
+  port: 27019

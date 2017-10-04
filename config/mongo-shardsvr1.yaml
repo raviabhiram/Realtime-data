@@ -1,7 +1,7 @@
 sharding:
-  clusterRole: configsvr
+  clusterRole: shardsvr
 replication:
-  replSetName: realTimeDataConfig
+  replSetName: realTimeDataShard1
 storage:
   dbPath: /data/db
 net:
