@@ -9,4 +9,4 @@ RUN echo -e "[mongodb-org-3.4]\nname=MongoDB Repository\nbaseurl=https://repo.mo
 
 VOLUME /data/db
 
-EXPOSE 27017
+EXPOSE 27019
