@@ -1,6 +1,10 @@
 {
   "API": "https://gbfs.citibikenyc.com/gbfs/en/station_status.json",
-  "topic": "citibikedata",
+  "topic": "citiBikeData",
   "interval": 10000,
-  "writePath":"/bikeData/citiBikeData.json"
+  "writePath":"/vagrant/Realtime-data/flink/citiBikeData.json",
+  "mongoHost":"log-store",
+  "mongoPort":20001,
+  "dbName":"bikeSharingData",
+  "collection":"citiBike"
 }

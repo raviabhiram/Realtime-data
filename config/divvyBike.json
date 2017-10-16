@@ -2,5 +2,9 @@
   "API": "https://gbfs.divvybikes.com/gbfs/en/station_status.json",
   "topic": "divvybikedata",
   "interval": 30000,
-  "writePath":"/bikeData/divvyBikeData.json"
+  "writePath":"/bikeData/divvyBikeData.json",
+  "mongoHost":"log-store",
+  "mongoPort":20001,
+  "dbName":"bikeSharingData",
+  "collection":"divvyBike"
 }

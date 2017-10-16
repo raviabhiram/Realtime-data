@@ -26,7 +26,7 @@ public static void main(String[] args) throws Exception {
 
 public void run() throws Exception {
         try{
-//Get all configs from config.json.
+                //Get all configs from config.json.
                 JSONParser parser = new JSONParser();
                 Object configObject = parser.parse(new FileReader("/bikeConfig.json"));
                 JSONObject config = (JSONObject) configObject;
@@ -34,10 +34,10 @@ public void run() throws Exception {
                 String api=(String) config.get("API");
                 long interval=(long) config.get("interval");
 
-//Start streaming data.
+                //Start streaming data.
                 StreamData sd = new StreamData(topic,api);
 
-//Set up scheduler to ping the API at regular intervals.
+                //Set up scheduler to ping the API at regular intervals.
                 Timer time = new Timer();
                 long delay = 0;
                 time.schedule(sd,delay,interval);
