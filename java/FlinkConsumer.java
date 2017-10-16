@@ -76,15 +76,9 @@ public void run(String[] args) throws Exception {
 
 public class MongoPublisher extends RichSinkFunction<String> {
 
-// DBCollection collection;
-// public MongoPublisher(DBCollection coll){
-//         collection=coll;
-// }
-
 @Override
 public void invoke(String streamValue){
         try{
-                System.out.println(streamValue);
                 JSONParser parser = new JSONParser();
                 Object configObject = parser.parse(streamValue);
                 JSONObject json = (JSONObject) configObject;
