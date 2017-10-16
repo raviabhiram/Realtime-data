@@ -1,4 +1,4 @@
-FROM kafka
+FROM docker.opexanalytics.com:5000/realtime-kafka
 
 COPY . /java
 
