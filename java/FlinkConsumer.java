@@ -50,7 +50,7 @@ public void run(String[] args) throws Exception {
 
                 //Get all configs from config.json.
                 JSONParser parser = new JSONParser();
-                Object configObject = parser.parse(new FileReader("../config/citiBike.json"));
+                Object configObject = parser.parse(new FileReader("/bikeConfig.json"));
                 JSONObject config = (JSONObject) configObject;
                 String topic=(String) config.get("topic");
                 String resultsPath=(String) config.get("writePath");
