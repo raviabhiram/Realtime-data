@@ -4,5 +4,8 @@ replication:
   replSetName: realTimeDataShard1
 storage:
   dbPath: /data/db
+  wiredTiger:
+    engineConfig:
+      cacheSizeGB: 0.25
 net:
   port: 27019
