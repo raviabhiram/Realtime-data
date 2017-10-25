@@ -1,0 +1,20 @@
+{
+  "server":{
+    "port":9092
+  },
+  "database": {
+    "mongo": {
+      "host": "platform-qa.opexanalytics.com",
+      "port": "20001",
+      "dbName": "bikeSharingData",
+      "connectTimeoutMS": 10000,
+      "socketTimeoutMS": 10000,
+      "maxPoolSize": 3,
+      "poolSize": 3,
+      "autoReconnect": true,
+      "reconnectTries": 5,
+      "reconnectInterval": 2000,
+      "validateOptions": true
+    }
+  }
+}
