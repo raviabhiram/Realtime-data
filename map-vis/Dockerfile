@@ -6,7 +6,8 @@ RUN mkdir $DIR
 
 COPY . $DIR/
 
-RUN npm install
+RUN cd $DIR && \
+  npm install
 
 WORKDIR $DIR
 
