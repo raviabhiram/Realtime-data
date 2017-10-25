@@ -10,6 +10,6 @@ RUN npm install
 
 WORKDIR $DIR
 
-EXPOSE 9092
+EXPOSE 8000
 
 CMD ["npm","run","start"]
