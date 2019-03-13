@@ -1,16 +1,15 @@
 var Bluebird = require('bluebird');
-
 var mongoClient = require('../dataAccess/mongo').getInstance();
+var DataProvider = function () {};
 
-var DataProvider = function() {}
-
-var _getStations = function() {
+// Internal function to get the list of locations where stations are located.
+var _getStations = function () {
   var stations = [];
   console.log('Getting stations.');
   return mongoClient.findDocument('divvyBikeStations', {})
-    .then(function(data) {
+    .then(function (data) {
       var rawData = data.data.stations;
-      rawData.forEach(function(station) {
+      rawData.forEach(function (station) {
         if (!stations[station.station_id]) {
           stations[station.station_id] = {};
           stations[station.station_id] = {
@@ -29,21 +28,22 @@ var _getStations = function() {
             capacity: station.capacity
           };
         }
-      })
+      });
       return stations;
     })
-    .catch(function(err) {
+    .catch(function (err) {
       console.log('Error getting stations!', err);
       throw err;
     });
 };
 
-var _getStatus = function(stations) {
+// Internal function to get the status of each station.
+var _getStatus = function (stations) {
   console.log('Getting status.');
   return mongoClient.findLatestDocument('divvyBike', {})
-    .then(function(data) {
+    .then(function (data) {
       var rawData = data.data.stations;
-      rawData.forEach(function(station) {
+      rawData.forEach(function (station) {
         stationData = stations[station.station_id];
         stationData.last_reported = station.last_reported;
         stationData.num_bikes_available = station.num_bikes_available;
@@ -56,25 +56,26 @@ var _getStatus = function(stations) {
       });
       return stations;
     })
-    .catch(function(err) {
+    .catch(function (err) {
       console.log('Error getting stations!', err);
       throw err;
     });
-}
+};
 
-DataProvider.prototype.getData = function(req, res) {
+// Function called by the API to get the data to plot on the map.
+DataProvider.prototype.getData = function (req, res) {
   console.log('Inside data provider.');
   return _getStations()
-    .then(function(stations) {
+    .then(function (stations) {
       console.log('Retireved stations list.');
-      return _getStatus(stations)
+      return _getStatus(stations);
     })
-    .then(function(data) {
+    .then(function (data) {
       console.log('Retrieved station data.');
       res.status(200).send(data);
       console.log('Successfully sent data.');
     })
-    .catch(function(err) {
+    .catch(function (err) {
       console.log('Error!', err);
       res.status(500).send(err);
       throw err;
